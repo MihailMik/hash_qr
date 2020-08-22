@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ceebe4;
+    padding:0.25rem;
+
+    /*To paint over the bottom of the screen*/
+    height: 100vh;
+}
+.clCipherFragment {
+    margin-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+/*----- Rows -----*/
+.clRowTitle {
+    display: flex;
+    color: blue;
+    white-space: pre;
+    height: 1.5rem;
+    overflow: hidden;
+}
+input {
+    border: none;
+
+    /*It's strange effect without -0.25rem*/
+    width: calc(100% - 0.25rem);
+}
+.clRowGreen,
+.clRowYellow
+{
+    display: block;
+    white-space: pre;
+    height: 1.5rem;
+    word-break: break-all;
+}
+.clRowGreen  {color: yellow; background-color: green;}
+.clRowYellow {color: red;    background-color: yellow;}
+
+.clRowQR {
+    display: flex;
+    padding: 5px 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*----- RowTitle elements -----*/
+.clRepeat {
+    height: 1.2rem;
+    margin-left: auto;
+}
+/*----- RowQR elements -----*/
+.clQR {
+    width:19%;
+    height: auto;
+}
+.clQRgreenSquare  {
+    width: 19%;
+    height: auto;
+    background-color: green;
+}
+.clQRsign {
+    border: none;
+    background-color: transparent;
+    width: 18%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.clQRlogo {
+    width: 7%;
+    margin-top: auto;
+
+    /*Logo picture have 5 empty pixels in the bottom*/
+    margin-bottom: -5px;
+}
+.clQRshift {
+    margin-left: 37%;
+}
+/*----- RowLabel elements -----*/
+.clRowLabel {
+    margin-top: -5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clLabelHash,
+.clLabelOpen,
+.clLabelDiff{
+    border: none;
+    background-color: transparent;
+    width: calc(19% + 30px);
+    padding: 0;
+    overflow: visible;
+    text-align: center;
+}
+.clLabelOpen {margin-left: calc(18% - 45px);}
+.clLabelDiff {margin-left: calc(25% - 45px);}
+
+/*----- Info row -----*/
+.clInfo {
+    margin-top: 15px;
+    color: blue;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 0 .5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*----- color classes -----*/
+.clRed {color: red}
+.clGreen {color: green}
