@@ -1,0 +1,101 @@
+.main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ceebe4;
+    padding: 0.25rem;
+
+    /*To paint over the bottom of the screen*/
+    height: 100vh;
+}
+.clCipherFragment {
+    margin-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+/*----- Rows -----*/
+.clRowTitle {
+    display: flex;
+    color: blue;
+    white-space: pre;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.clRowGreen,
+.clRowYellow
+{
+    border: none;
+    width: 100%;
+    white-space: pre;
+    height: 1.5rem;
+    word-break: break-all;
+}
+.clRowGreen  {color: yellow; background-color: green;}
+.clRowYellow {color: red;    background-color: yellow;}
+
+.clRowQR {
+    display: flex;
+    padding: 5px 15px;
+}
+.clRowLabel {
+    display: flex;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+}
+
+/*----- RowTitle elements -----*/
+.clRepeat {
+    height: 1.2rem;
+    margin-left: auto;
+}
+/*----- RowQR elements -----*/
+.clQR {
+    width:19%;
+    height: auto;
+}
+.clQRgreenSquare  {
+    width: 19%;
+    height: auto;
+    background-color: green;
+}
+.clQRsign {
+    border: none;
+    background-color: transparent;
+    width: 18%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.clQRlogo {
+    width: 7%;
+    margin-top: auto;
+
+    /*Logo picture have 5 empty pixels in the bottom*/
+    margin-bottom: -5px;
+}
+.clQRshift {
+    margin-left: 37%;
+}
+/*----- RowLabel elements -----*/
+.clLabelHash,
+.clLabelOpen,
+.clLabelDiff{
+    border: none;
+    background-color: transparent;
+    width: 19%;
+    padding: 0;
+    overflow: visible;
+    text-align: center;
+}
+.clLabelOpen {margin-left: 18%;}
+.clLabelDiff {margin-left: 25%;}
+
+/*----- Info row -----*/
+.clInfo {
+    color: blue;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 0 .5rem;
+}
+
+/*----- color classes -----*/
+.clRed {color: red}
+.clGreen {color: green}
